@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Подсчет суммы двух чисел</title>
+</head>
+<body>
+    <h1>Подсчет суммы двух чисел</h1>
+    <hr>
+
+    <form onsubmit="return false">
+        <input type="text" id="num-a" value="5">
+        <input type="text" id="num-b" value="4">
+        <button type="submit" onclick="getSum()">Посчитать сумму</button>
+        <!--\\ button[type=submit][onclick=getSum()]>{Посчитать сумму}-->
+    </form>
+
+    <script type="text/typescript">
+        function getSum() {
+            const inputA: string = document.getElementById('num-a');
+            const inputB: string = document.getElementById('num-b');
+
+            const a: number = Integer.parseInt(inputA.value);
+            const b: number = Integer.parseInt(inputA.value);
+
+            alert(a + b);
+        }
+    </script>
+</body>
+</html>
